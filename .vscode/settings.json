@@ -1,3 +1,26 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "jenkins-runner.jobs": {
+    "ide": {
+      "runWith": "host-with-password",
+      "name": "MyFirstPipeline",
+      "isDefault": true
+    }
+  },
+  "jenkins-runner.hostConfigs": {
+    "host-with-password": {
+      "url": "http://localhost:8080",
+      "user": "nagaraj2709",
+      "password": "nagaraj2709",
+      "useCrumbIssuer": false,
+      "rejectUnauthorizedCert": false
+    },
+    "host-prompt-for-password": {
+      "url": "http://server:8080",
+      "user": "nagaraj2709"
+    },
+    "host-no-password": {
+      "url": "http://server-no-auth:8080"
+    }
+  }
 }
